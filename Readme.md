@@ -112,4 +112,5 @@ Here is how my styled membership form looks:!{form screenshot}(screenshot.jpeg)
 
 ## 🏁 Conclusion
 This project demonstrates professional front-end styling practices using pure CSS and HTML.  
+
 It meets layout, color, and interaction requirements while maintaining code clarity and simplicity suitable for academic grading.
