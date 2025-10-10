@@ -1,0 +1,147 @@
+:root {
+  --primary-blue: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-light: #3b82f6;
+
+  --bg-color: #f9fafb;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --border-color: #d1d5db;
+  --border-focus: #2563eb;
+  --accent-pink: #ec4899;
+}
+
+/* ----- BASIC RESET ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----- PAGE BODY ----- */
+body {
+  background-color: var(--bg-color);
+  font-family: Arial, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* ----- MAIN FORM CONTAINER ----- */
+form {
+  background-color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- FORM TITLE ----- */
+h2 {
+  text-align: center;
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+}
+
+/* ----- FIELDSETS AND LEGENDS ----- */
+fieldset {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+legend {
+  color: var(--primary-blue);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ----- LABELS ----- */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* ----- INPUTS, TEXTAREAS, SELECTS ----- */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* ----- PLACEHOLDER TEXT ----- */
+::placeholder {
+  color: var(--text-light);
+}
+
+/* ----- INPUT FOCUS EFFECT ----- */
+input:focus,
+textarea:focus {
+  border-color: var(--border-focus);
+  outline: none;
+  box-shadow: 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+/* ----- RADIO AND CHECKBOX ----- */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* ----- BUTTON STYLES ----- */
+input[type="submit"],
+input[type="reset"] {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-dark);
+}
+
+input[type="reset"] {
+  background-color: var(--accent-pink);
+}
+
+input[type="reset"]:hover {
+  background-color: #be185d;
+}
+
+/* ----- LINKS ----- */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ----- RESPONSIVE DESIGN ----- */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+}
